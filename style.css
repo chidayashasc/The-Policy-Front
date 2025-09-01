@@ -1,0 +1,100 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  background: url('assets/hero-bg.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.cta-btn {
+  margin-top: 1.5rem;
+  background: #4f46e5;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #4338ca;
+}
+
+.navbar {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-link {
+  color: #374151;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #4f46e5;
+}
+
+.active-link {
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-bottom: 2rem;
+}
+
+.team-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.team-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 9999px;
+  margin: 0 auto 1rem;
+}
+
+.team-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.team-role {
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
