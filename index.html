@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Company Name</title>
+  <title>The Policy Front</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-gray-50 text-gray-800">
 
   <!-- Hero Section -->
-  <section id="home" class="hero-section">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1 class="text-4xl md:text-6xl font-bold">Welcome to Your Company</h1>
-      <p class="mt-4 text-lg md:text-xl max-w-xl mx-auto">
-        We deliver innovation, trust, and excellence to help businesses grow.
+  <section id="home" class="relative bg-cover bg-center h-screen flex items-center justify-center text-center text-white"
+         style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <!--<section id="home" class="hero-section flex items-center justify-center"></section> -->
+         <div class="overlay"></div>
+    <div class="hero-content text-center px-4">
+      <h1 class="text-3xl md:text-6xl font-bold leading-snug">
+        Welcome to The Policy Front
+      </h1>
+      <p class="mt-6 text-base md:text-xl max-w-xl mx-auto leading-relaxed">
+        We deliver innovation, trust, and excellence to help businesses grow
       </p>
-      <a href="#about" class="cta-btn">Learn More</a>
+      <a href="#about" class="cta-btn mt-8 inline-block w-full sm:w-auto">
+        Learn More
+      </a>
     </div>
   </section>
 
@@ -36,8 +43,16 @@
   <section id="about" class="py-20 text-center">
     <h2 class="section-title">About Us</h2>
     <p class="max-w-2xl mx-auto text-gray-600">
-      We are a forward-thinking company committed to delivering solutions that drive growth and innovation. 
-      Our mission is to empower businesses with technology, creativity, and customer-focused strategies.
+        At The Policy Front, we believe that innovation is not just about technology — it’s about creating smarter ways to connect, inspire, and transform.<br><br>
+    </p>
+    <p class="max-w-2xl mx-auto text-gray-600">
+        We harness the possibilities of Artificial Intelligence, Behavioral Sciences, and Big Data to craft bold, future-ready solutions that help our customers reach further and engage deeper.<br><br>
+    </p>  
+    <p class="max-w-2xl mx-auto text-gray-600">
+        Our work is where human insight meets intelligent design. By decoding behaviors, analyzing patterns, and leveraging data at scale, we design strategies that don’t just capture attention — they spark action.<br><br>
+    </p>
+    <p class="max-w-2xl mx-auto text-gray-600">    
+        We are dreamers, doers, and disruptors — committed to helping organizations break through conventional boundaries, explore new narratives, and amplify their impact in an ever-evolving world.<br><br>
     </p>
   </section>
 
@@ -45,32 +60,177 @@
   <section id="company" class="py-20 bg-gray-100 text-center">
     <h2 class="section-title">Company Details</h2>
     <div class="max-w-xl mx-auto space-y-2 text-gray-700">
-      <p><strong>Company Name:</strong> Your Company Pvt Ltd</p>
-      <p><strong>Founded:</strong> 2025</p>
-      <p><strong>Industry:</strong> Consulting & Technology</p>
-      <p><strong>Registration No.:</strong> XYZ123456</p>
-      <p><strong>Website:</strong> www.yourcompany.com</p>
+      <p><strong>Company Name:</strong> The Policy Front</p>
+      <p><strong>Founded:</strong> 2023</p>
+      <p><strong>Industry:</strong> Advertising, Consulting and Technology</p>
+      
     </div>
   </section>
 
   <!-- Team -->
-  <section id="team" class="py-20">
-    <h2 class="section-title">Our Team</h2>
-    <div class="grid md:grid-cols-3 gap-8 px-6 container mx-auto">
-      <div class="team-card">
-        <img src="assets/member1.jpg" alt="CEO" class="team-img" />
-        <h3 class="team-name">Person 1 – CEO</h3>
-        <p class="team-role">Visionary leader driving company growth.</p>
-      </div>
-      <div class="team-card">
-        <img src="assets/member2.jpg" alt="CTO" class="team-img" />
-        <h3 class="team-name">Person 2 – CTO</h3>
-        <p class="team-role">Technology expert leading innovation.</p>
-      </div>
-      <div class="team-card">
-        <img src="assets/member3.jpg" alt="Manager" class="team-img" />
-        <h3 class="team-name">Person 3 – Manager</h3>
-        <p class="team-role">Ensures smooth operations and delivery.</p>
+  <section id="team" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title text-center">Our Team</h2>
+      
+      <!-- Responsive Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-10">
+        
+        <!-- Team Member -->
+        <div class="text-center">
+          <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+          <h3 class="text-lg font-semibold text-gray-800">Ajay</h3>
+          <p class="text-gray-600">Campaign Developer</p>
+        </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Beeresh</h3>
+            <p class="text-gray-600">Senior Creative Editor</p>
+          </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Deepthi</h3>
+            <p class="text-gray-600">Content Curator</p>
+          </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Divya</h3>
+            <p class="text-gray-600">Image Curator</p>
+          </div>
+        
+          <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Girish</h3>
+            <p class="text-gray-600">Senior Narrative Expert</p>
+          </div>
+           <!-- Team Member -->
+
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Karthik</h3>
+            <p class="text-gray-600">Video Content Architect</p>
+          </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Kshiteehsa</h3>
+            <p class="text-gray-600">Director of Visual Narratives</p>
+          </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Manjunath</h3>
+            <p class="text-gray-600">Narrative Designer</p>
+          </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Naganath</h3>
+            <p class="text-gray-600">Visual Editing Artist</p>
+          </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Neetha</h3>
+            <p class="text-gray-600">Content Architect</p>
+          </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Ramesh</h3>
+            <p class="text-gray-600">Communication Designer</p>
+          </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Sanketh</h3>
+            <p class="text-gray-600">Narrative Storyteller</p>
+          </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member1.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Shashank</h3>
+            <p class="text-gray-600">Visual Storyteller</p>
+          </div>
+        
+        <!-- Team Member -->
+        <div class="text-center">
+          <img src="assets/member2.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+          <h3 class="text-lg font-semibold text-gray-800">Sharma ji</h3>
+          <p class="text-gray-600">Operations Support Executive</p>
+        </div>
+        
+         <!-- Team Member -->
+         <div class="text-center">
+            <img src="assets/member2.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Shivshankar</h3>
+            <p class="text-gray-600">Administrative Support Specialist</p>
+          </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+          <img src="assets/member3.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+          <h3 class="text-lg font-semibold text-gray-800">Swaroop</h3>
+          <p class="text-gray-600">Visual Architect</p>
+        </div>
+
+        <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member3.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Md Swali</h3>
+            <p class="text-gray-600">Narrative Architect</p>
+          </div>
+
+          <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member3.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Thanushree</h3>
+            <p class="text-gray-600">Content Architect</p>
+          </div>
+
+          <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member3.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Vijeth</h3>
+            <p class="text-gray-600">Narrative Strategist</p>
+          </div>
+        
+          <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member3.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Vivek</h3>
+            <p class="text-gray-600">Visual Editing Artist</p>
+          </div>
+
+          <!-- Team Member -->
+        <div class="text-center">
+            <img src="assets/member3.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+            <h3 class="text-lg font-semibold text-gray-800">Vinayak</h3>
+            <p class="text-gray-600">Developer</p>
+          </div>
+        
+        <!-- Example Extra Member -->
+        <div class="text-center">
+          <img src="assets/member4.jpg" class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-100 shadow-md mb-4" />
+          <h3 class="text-lg font-semibold text-gray-800">Yashas</h3>
+          <p class="text-gray-600">Developer</p>
+        </div>
+        
+        <!-- (Just copy-paste more blocks for more team members) -->
+        
       </div>
     </div>
   </section>
@@ -78,14 +238,14 @@
   <!-- Contact -->
   <section id="contact" class="py-20 bg-gray-100 text-center">
     <h2 class="section-title">Contact Us</h2>
-    <p class="text-gray-700"><strong>Email:</strong> contact@yourcompany.com</p>
-    <p class="text-gray-700"><strong>Phone:</strong> +91-12345-67890</p>
-    <p class="text-gray-700"><strong>Address:</strong> #123, Business Street, City, State, Country - PIN</p>
+    <p class="text-gray-700"><strong>Email:</strong> info@thepolicyfront.com <br><br></p>
+    <p class="text-gray-700"><strong>Phone:</strong> +91-9986060008 <br><br></p>
+    <p class="text-gray-700"><strong>Address:</strong> #6, 3rd Main, 5th Block, Kumara Park West, Bengaluru - 560 020 <br><br></p>
   </section>
 
   <!-- Footer -->
   <footer class="bg-indigo-700 text-white py-6 text-center">
-    <p>&copy; 2025 Your Company Name. All Rights Reserved.</p>
+    <p>&copy; 2025 The Policy Front. All Rights Reserved.</p>
   </footer>
 
   <script src="script.js"></script>
